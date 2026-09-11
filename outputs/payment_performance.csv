@@ -1,0 +1,4 @@
+payment,total_transactions,total_units_sold,total_revenue,total_gross_income,average_transaction_value
+Cash,344,1896,112206.57,5343.17,326.18
+Ewallet,345,1892,109993.11,5237.77,318.82
+Credit card,311,1722,100767.07,4798.43,324.01
