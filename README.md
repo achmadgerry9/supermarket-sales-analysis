@@ -327,7 +327,7 @@ python/
 02_data_cleaning.py - data cleaning and validation
 03_analysis.py - analysis and visualizations
 
-screenshot/
+screenshots/
 ![Dashboard Screenshot](screenshots/Dashboard.png)
 
 sql/
