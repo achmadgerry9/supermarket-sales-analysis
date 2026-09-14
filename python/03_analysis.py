@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 # =======================================
 # Supermarket Sales Analysis
@@ -7,9 +8,18 @@ import matplotlib.pyplot as plt
 # =======================================
 
 # Load cleaned data
-file_path = "D:/Portfolio 2026/supermarket-sales-analysis/data/cleaned/supermarket_sales_cleaned.csv"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-df = pd.read_csv(file_path)
+CLEANED_DATA_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "cleaned"
+    / "supermarket_sales_cleaned.csv"
+)
+
+OUTPUTS_DIR = PROJECT_ROOT / "outputs"
+
+df = pd.read_csv(CLEANED_DATA_PATH)
 
 # Convert date column to datetime
 df["date"] = pd.to_datetime(df["date"])
@@ -55,7 +65,7 @@ print("\nCustomer type performance:")
 print(customer_performance)
 
 customer_performance.to_csv(
-    "D:/Portfolio 2026/supermarket-sales-analysis/outputs/customer_type_performance.csv",
+    OUTPUTS_DIR / "customer_type_performance.csv",
     index=False
 )
 
@@ -91,7 +101,7 @@ print("\nMonthly revenue:")
 print(monthly_revenue)
 
 monthly_revenue.to_csv(
-    "D:/Portfolio 2026/supermarket-sales-analysis/outputs/monthly_revenue.csv",
+    OUTPUTS_DIR / "monthly_revenue.csv",
     index=False
 )
 
@@ -135,7 +145,7 @@ print("\nBranch performance:")
 print(branch_performance)
 
 branch_performance.to_csv(
-    "D:/Portfolio 2026/supermarket-sales-analysis/outputs/branch_performance.csv",
+    OUTPUTS_DIR / "branch_performance.csv",
     index=False
 )
 
@@ -192,7 +202,7 @@ print("\nProduct line performance:")
 print(product_performance)
 
 product_performance.to_csv(
-    "D:/Portfolio 2026/supermarket-sales-analysis/outputs/product_line_performance.csv",
+    OUTPUTS_DIR / "product_line_performance.csv",
     index=False
 )
 
@@ -244,7 +254,7 @@ print("\nPayment performance:")
 print(payment_performance)
 
 payment_performance.to_csv(
-    "D:/Portfolio 2026/supermarket-sales-analysis/outputs/payment_performance.csv",
+    OUTPUTS_DIR / "payment_performance.csv",
     index=False
 )
 

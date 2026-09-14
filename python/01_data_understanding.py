@@ -1,12 +1,27 @@
 import pandas as pd
+from pathlib import Path
 
 # =======================================
 # 1. Load the raw dataset
 # =======================================
 
-file_path = "D:/Portfolio 2026/supermarket-sales-analysis/data/raw/supermarket_sales.csv"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-df = pd.read_csv(file_path)
+RAW_DATA_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "raw"
+    / "supermarket_sales.csv"
+)
+
+CLEANED_DATA_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "cleaned"
+    / "supermarket_sales_cleaned.csv"
+)
+
+df = pd.read_csv(RAW_DATA_PATH)
 
 # =======================================
 # 2. Basic dataset information
