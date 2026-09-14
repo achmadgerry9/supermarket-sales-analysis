@@ -328,7 +328,7 @@ python/
 03_analysis.py - analysis and visualizations
 
 screenshot/
-![Dashboard Screenshot](screenshots/Dashboard.png)
+![Dashboard Screenshot](screenshot/Dashboard.png)
 
 sql/
 01_schema.sql - PostgreSQL table definition
