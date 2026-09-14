@@ -1,9 +1,26 @@
+from pathlib import Path
 import pandas as pd
 
 # =======================================
 # 1. Load raw data
 # =======================================
-df = pd.read_csv("D:/Portfolio 2026/supermarket-sales-analysis/data/raw/supermarket_sales.csv")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+RAW_DATA_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "raw"
+    / "supermarket_sales.csv"
+)
+
+CLEANED_DATA_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "cleaned"
+    / "supermarket_sales_cleaned.csv"
+)
+
+df = pd.read_csv(RAW_DATA_PATH)
 
 print("Original shape:", df.shape)
 

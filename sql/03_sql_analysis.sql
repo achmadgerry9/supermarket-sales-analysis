@@ -17,7 +17,7 @@ SELECT
 FROM supermarket_sales;
 
 -- ======================================
--- 2. Overall Business Performance
+-- 2. Branch breakdown
 -- ======================================
 
 SELECT
@@ -108,7 +108,7 @@ GROUP BY payment
 ORDER BY total_revenue DESC;
 
 -- ======================================
--- 8. Product Line Profitablity
+-- 8. Product Line Profitability
 -- ======================================
 
 SELECT
