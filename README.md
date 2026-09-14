@@ -4,6 +4,12 @@ Project Overview
 
 This project analyzes supermarket sales transactions to understand sales performance and find areas that may need further investigation.
 
+Dataset Source
+
+The dataset was downloaded from Kaggle:
+
+[Supermarket Sales](https://www.kaggle.com/datasets/markmedhat/supermarket-sales)
+
 The dataset contains sales from January to March 2019. I used Python for data understanding, cleaning, validation, analysis, and visualization. I then loaded the cleaned data into PostgreSQL for SQL analysis and used Excel 2019 to build a management-style dashboard.
 
 Workflow:
