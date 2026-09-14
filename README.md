@@ -330,7 +330,7 @@ python/
 sql/
 01_schema.sql - PostgreSQL table definition
 02_data_validation.sql - database validation checks
-03_analysis.sql - SQL business analysis
+03_sql_analysis.sql - SQL business analysis
 
 README.md
 Project documentation
