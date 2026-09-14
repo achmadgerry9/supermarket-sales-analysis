@@ -155,7 +155,7 @@ validation_passed = (
 )
 
 if validation_passed:
-    output_path = "D:/Portfolio 2026/supermarket-sales-analysis/data/cleaned/supermarket_sales_cleaned.csv"
+    output_path = CLEANED_DATA_PATH
 
     df.to_csv(output_path, index=False)
 
